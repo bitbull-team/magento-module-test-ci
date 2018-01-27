@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <install>
+            <date><![CDATA[Thu, 30 Jan 2014 00:24:35 +0000]]></date>
+        </install>
+        <crypt>
+            <key><![CDATA[lsdhkfgnjbknfcjkvn235]]></key>
+        </crypt>
+        <disable_local_modules><![CDATA[false]]></disable_local_modules>
+        <resources>
+            <db>
+                <table_prefix><![CDATA[]]></table_prefix>
+            </db>
+            <default_setup>
+                <connection>
+                    <host><![CDATA[mysql]]></host>
+                    <username><![CDATA[root]]></username>
+                    <password><![CDATA[root]]></password>
+                    <dbname><![CDATA[magento]]></dbname>
+                    <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
+                    <model><![CDATA[mysql4]]></model>
+                    <type><![CDATA[pdo_mysql]]></type>
+                    <pdoType><![CDATA[]]></pdoType>
+                    <active><![CDATA[1]]></active>
+                </connection>
+            </default_setup>
+        </resources>
+        <session_save><![CDATA[files]]></session_save>
+        <composer_vendor_path><![CDATA[{{root_dir}}/../vendor]]></composer_vendor_path>
+        <psr0_namespaces>
+            <Bitbull/>
+        </psr0_namespaces>        
+        <remote_addr_headers>
+            <header1><![CDATA[HTTP_X_REAL_IP]]></header1>
+            <header2><![CDATA[HTTP_X_FORWARDED_FOR]]></header2>
+        </remote_addr_headers>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <frontName><![CDATA[admin]]></frontName>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

@@ -1,0 +1,28 @@
+{
+  "name": "bitbull/magento_project",
+  "description": "Magento Project",
+  "minimum-stability": "dev",
+  "authors": [
+    {"name": "Gennaro Vietri", "email": "gennaro.vietri@bitbull.it"}
+  ],
+  "repositories":[
+    {"type": "composer", "url": "https://packages.firegento.com"},
+    {"type": "composer", "url": "https://packages.bitbull.it"},
+    {"type": "path", "url": "{{MODULE_DIR}}"}
+  ],
+  "require":{
+    "magento-hackathon/magento-composer-installer": "3.0.6",
+    "bitbull/magento-core": "1.9.3.1",
+    "firegento/psr0autoloader": "dev-master",
+    "{{MODULE_COMPOSER_NAME}}": "*"
+  },
+  "config": {
+    "secure-http": false
+  },
+  "extra":{
+    "magento-root-dir": "web",
+    "magento-deploystrategy": "copy",
+    "magento-force": false,
+    "auto-append-gitignore": false
+  }
+}
