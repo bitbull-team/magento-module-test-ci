@@ -14,7 +14,7 @@
             </db>
             <default_setup>
                 <connection>
-                    <host><![CDATA[mysql]]></host>
+                    <host><![CDATA[127.0.0.1]]></host>
                     <username><![CDATA[root]]></username>
                     <password><![CDATA[root]]></password>
                     <dbname><![CDATA[magento]]></dbname>
